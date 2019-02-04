@@ -1,0 +1,4 @@
+app_username="wordpress"
+app_password="ThisIsSecret"
+app_database="wordpress"
+bind="0.0.0.0"
