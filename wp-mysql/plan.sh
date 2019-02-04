@@ -63,7 +63,7 @@ do_build() {
           -DOPENSSL_INCLUDE_DIR="$(pkg_path_for core/openssl)/include" \
           -DOPENSSL_LIBRARY="$(pkg_path_for core/openssl)/lib/libssl.so" \
           -DCRYPTO_LIBRARY="$(pkg_path_for core/openssl)/lib/libcrypto.so" \
-          -DCMAKE_INSTALL_PREFIX="$pkg_prefix" \
+          -DCMAKE_INSTALL_PREFIX="mysql-$pkg_version" \
           -DWITH_EMBEDDED_SERVER=no \
           -DWITH_EMBEDDED_SHARED_LIBRARY=no
   make
