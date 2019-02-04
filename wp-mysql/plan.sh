@@ -1,9 +1,9 @@
-pkg_name=wp-mysql
+pkg_name=mysql
 pkg_origin=alan
 pkg_version=5.7.17
 pkg_maintainer='The Habitat Maintainers <humans@habitat.sh>'
 pkg_license=('GPL-2.0')
-pkg_source=http://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-${pkg_version}.tar.gz
+pkg_source=http://dev.mysql.com/get/Downloads/MySQL-5.7/${pkg_name}-${pkg_version}.tar.gz
 pkg_shasum=cebf23e858aee11e354c57d30de7a079754bdc2ef85eb684782458332a4b9651
 pkg_upstream_url=https://www.mysql.com/
 pkg_description=$(cat << EOF
@@ -63,7 +63,7 @@ do_build() {
           -DOPENSSL_INCLUDE_DIR="$(pkg_path_for core/openssl)/include" \
           -DOPENSSL_LIBRARY="$(pkg_path_for core/openssl)/lib/libssl.so" \
           -DCRYPTO_LIBRARY="$(pkg_path_for core/openssl)/lib/libcrypto.so" \
-          -DCMAKE_INSTALL_PREFIX="mysql-$pkg_version" \
+          -DCMAKE_INSTALL_PREFIX="$pkg_prefix" \
           -DWITH_EMBEDDED_SERVER=no \
           -DWITH_EMBEDDED_SHARED_LIBRARY=no
   make
