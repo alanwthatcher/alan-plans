@@ -2,8 +2,8 @@
 # See full docs at https://www.habitat.sh/docs/reference/plan-syntax/
 
 pkg_name=wordpress
-pkg_origin=alan
-pkg_version="4.9.5"
+pkg_origin=azure-habitat-example
+pkg_version="5.0.3"
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_license=('Apache-2.0')
 pkg_source="https://wordpress.org/${pkg_name}-${pkg_version}.tar.gz"
@@ -16,13 +16,13 @@ source_dir=$HAB_CACHE_SRC_PATH/${pkg_name}
 pkg_svc_user=root
 pkg_svc_group=$pkg_svc_user
 
-pkg_deps=(core/php core/curl core/wordpress-proxy/4.7.4 core/mysql-client)
+pkg_deps=(core/php core/curl core/nginx core/mysql-client core/readline)
 
 pkg_exports=()
 pkg_exposes=()
 
 pkg_binds=(
-  [database]="port username password"
+  [database]="host port username password database"
 )
 
 
@@ -31,5 +31,5 @@ do_build(){
 }
 
 do_install() {
-  cp -r "$source_dir" "$pkg_prefix/public_html/"
+  cp -r "$source_dir" "$pkg_prefix/wordpress/"
 }
