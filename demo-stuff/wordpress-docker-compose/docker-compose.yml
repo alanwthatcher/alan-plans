@@ -4,6 +4,6 @@ services:
     image: alan4habitatregistry.azurecr.io/alan/mysql:latest
     environment:
       HAB_MYSQL: "bind = '0.0.0.0'\napp_username = 'wordpress'\napp_password = 'ThisIsPassword'\napp_database = 'wordpress'" 
-  national-parks:
+  wordpress:
     image: alan4habitatregistry.azurecr.io/alan/wordpress:latest
     command: --peer msyql --bind database:mysql.default
