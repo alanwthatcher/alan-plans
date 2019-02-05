@@ -7,7 +7,7 @@ pkg_version="4.9.5"
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_license=('Apache-2.0')
 pkg_source="https://wordpress.org/${pkg_name}-${pkg_version}.tar.gz"
-pkg_shasum="9aa4d1bc9acc39279f15e914415be87af01a886287b1b92b3a80426a4edbd78a"
+pkg_shasum="a1664b259755021adbfbe5e8f7fd78a98c015e92e1f985258abed19f759822cb"
 pkg_description="installs wordpress"
 pkg_upstream_url="https://wordpress.org/"
 
