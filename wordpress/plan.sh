@@ -2,7 +2,7 @@
 # See full docs at https://www.habitat.sh/docs/reference/plan-syntax/
 
 pkg_name=wordpress
-pkg_origin=azure-habitat-example
+pkg_origin=alan
 pkg_version="5.0.3"
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_license=('Apache-2.0')
