@@ -1,0 +1,6 @@
+#!/bin/sh
+exec 2>&1
+
+{{pkgPathFor "core/nginx"}}/bin/nginx -c {{pkg.svc_config_path}}/nginx.conf &
+
+exec {{pkgPathFor "core/php"}}/sbin/php-fpm --nodaemonize

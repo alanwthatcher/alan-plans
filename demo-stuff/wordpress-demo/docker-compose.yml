@@ -1,0 +1,15 @@
+version: '2'
+services:
+  mysql:
+    image: alan6habitatregistry.azurecr.io/alan/mysql:latest
+    environment:
+      HAB_MYSQL: "bind = '0.0.0.0'\napp_username = 'wordpress'\napp_password = 'ThisIsPassword'\napp_database = 'wordpress'" 
+    ports:
+      - 9638:9638
+  wordpress:
+    image: alan6habitatregistry.azurecr.io/alan/wordpress:latest
+    command: --peer wordpress-demo_mysql_1 --bind database:mysql.default
+    depends_on:
+      - "mysql"
+    ports:
+      - 80:80

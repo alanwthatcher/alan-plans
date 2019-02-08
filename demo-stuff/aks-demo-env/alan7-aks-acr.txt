@@ -1,0 +1,115 @@
+{
+  "id": "/subscriptions/b02e675a-cee0-49bd-a056-daa7ed05bf4e/resourceGroups/alan7-hab-aks-demo",
+  "location": "eastus",
+  "managedBy": null,
+  "name": "alan7-hab-aks-demo",
+  "properties": {
+    "provisioningState": "Succeeded"
+  },
+  "tags": {
+    "X-APPLICATION": "DemoTest",
+    "X-CONTACT": "athatcher",
+    "X-CUSTOMER": "TEST",
+    "X-DEPT": "SA",
+    "X-PROJECT": "Demo",
+    "X-TTL": "72"
+  }
+}
+{
+  "aadProfile": null,
+  "addonProfiles": null,
+  "agentPoolProfiles": [
+    {
+      "count": 3,
+      "maxPods": 110,
+      "name": "nodepool1",
+      "osDiskSizeGb": 30,
+      "osType": "Linux",
+      "storageProfile": "ManagedDisks",
+      "vmSize": "Standard_DS2_v2",
+      "vnetSubnetId": null
+    }
+  ],
+  "dnsPrefix": "alan7-aks--alan7-hab-aks-de-b02e67",
+  "enableRbac": true,
+  "fqdn": "alan7-aks--alan7-hab-aks-de-b02e67-c1f629c3.hcp.eastus.azmk8s.io",
+  "id": "/subscriptions/b02e675a-cee0-49bd-a056-daa7ed05bf4e/resourcegroups/alan7-hab-aks-demo/providers/Microsoft.ContainerService/managedClusters/alan7-aks-demo",
+  "kubernetesVersion": "1.12.4",
+  "linuxProfile": {
+    "adminUsername": "azureuser",
+    "ssh": {
+      "publicKeys": [
+        {
+          "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6fSAhbgbISu1HLm96Vr7CpM20Mq31DLLdo0lzrGYNvOn2tg7i3b1r8k3gdz5ObU6m0TDg2hB+XRXYWOU18xudE5uL8AAAKL6+3UDB35q09xMsju7eSIAUU+VZMKcAUG6nNJwtDA/gykcutWqGllUAFu98Otg+AMJW9mm83U++G1nWMgQEp5c85MYeOg+1jEnOT8vmxmqJ30KcihE3Q68bg1vaS4ju2HBl0iwKmf7mnF2xgkaEiHXJAuav7OlGPt5rQVcwXK7+/BstCcLkVrf+zju4WZAaoyf/ESAPlCFJ/TcXpk25I/isN8ixnPL59Z/dTHKYcgUCanq9GNdptDql"
+        }
+      ]
+    }
+  },
+  "location": "eastus",
+  "name": "alan7-aks-demo",
+  "networkProfile": {
+    "dnsServiceIp": "10.0.0.10",
+    "dockerBridgeCidr": "172.17.0.1/16",
+    "networkPlugin": "kubenet",
+    "networkPolicy": null,
+    "podCidr": "10.244.0.0/16",
+    "serviceCidr": "10.0.0.0/16"
+  },
+  "nodeResourceGroup": "MC_alan7-hab-aks-demo_alan7-aks-demo_eastus",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "alan7-hab-aks-demo",
+  "servicePrincipalProfile": {
+    "clientId": "7643aedc-a59d-40e5-a580-38b68484b752",
+    "secret": null
+  },
+  "tags": {
+    "X-APPLICATION": "DemoTest",
+    "X-CONTACT": "athatcher",
+    "X-CUSTOMER": "TEST",
+    "X-DEPT": "SA",
+    "X-PROJECT": "Demo",
+    "X-TTL": "72"
+  },
+  "type": "Microsoft.ContainerService/ManagedClusters"
+}
+Merged "alan7-aks-demo" as current context in /Users/alan/.kube/config
+{
+  "adminUserEnabled": false,
+  "creationDate": "2019-02-06T20:39:50.419276+00:00",
+  "id": "/subscriptions/b02e675a-cee0-49bd-a056-daa7ed05bf4e/resourceGroups/alan7-hab-aks-demo/providers/Microsoft.ContainerRegistry/registries/alan7habitatregistry",
+  "location": "eastus",
+  "loginServer": "alan7habitatregistry.azurecr.io",
+  "name": "alan7habitatregistry",
+  "networkRuleSet": null,
+  "provisioningState": "Succeeded",
+  "resourceGroup": "alan7-hab-aks-demo",
+  "sku": {
+    "name": "Basic",
+    "tier": "Basic"
+  },
+  "status": null,
+  "storageAccount": null,
+  "tags": {},
+  "type": "Microsoft.ContainerRegistry/registries"
+}
+{
+  "canDelegate": null,
+  "id": "/subscriptions/b02e675a-cee0-49bd-a056-daa7ed05bf4e/resourceGroups/alan7-hab-aks-demo/providers/Microsoft.ContainerRegistry/registries/alan7habitatregistry/providers/Microsoft.Authorization/roleAssignments/f5f6b83d-1b76-46fe-8482-07661bb3159a",
+  "name": "f5f6b83d-1b76-46fe-8482-07661bb3159a",
+  "principalId": "b80dadd6-7e3f-4e0a-988a-343bac113a8d",
+  "resourceGroup": "alan7-hab-aks-demo",
+  "roleDefinitionId": "/subscriptions/b02e675a-cee0-49bd-a056-daa7ed05bf4e/providers/Microsoft.Authorization/roleDefinitions/acdd72a7-3385-48ef-bd42-f606fba81ae7",
+  "scope": "/subscriptions/b02e675a-cee0-49bd-a056-daa7ed05bf4e/resourceGroups/alan7-hab-aks-demo/providers/Microsoft.ContainerRegistry/registries/alan7habitatregistry",
+  "type": "Microsoft.Authorization/roleAssignments"
+}
+{
+  "appId": "e6f7902a-7fdb-4605-ba9a-532c6c3c224f",
+  "displayName": "alan7-habitat-acr-registry",
+  "name": "http://alan7-habitat-acr-registry",
+  "password": "ThisIsVeryStrongPassword",
+  "tenant": "a2b2d6bc-afe1-4696-9c37-f97a7ac416d7"
+}
+Configuration Details for Habitat Builder:
+  Server URL : alan7habitatregistry.azurecr.io
+  Service Principal ID : e6f7902a-7fdb-4605-ba9a-532c6c3c224f
+  Service Principal Password : ThisIsVeryStrongPassword

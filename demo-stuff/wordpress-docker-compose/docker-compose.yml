@@ -1,9 +1,0 @@
-version: '2'
-services:
-  mysql:
-    image: alan4habitatregistry.azurecr.io/alan/mysql:latest
-    environment:
-      HAB_MYSQL: "bind = '0.0.0.0'\napp_username = 'wordpress'\napp_password = 'ThisIsPassword'\napp_database = 'wordpress'" 
-  wordpress:
-    image: alan4habitatregistry.azurecr.io/alan/wordpress:latest
-    command: --peer msyql --bind database:mysql.default

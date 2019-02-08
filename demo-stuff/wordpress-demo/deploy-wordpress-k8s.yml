@@ -22,7 +22,7 @@ metadata:
 customVersion: v1beta2
 spec:
   v1beta2:
-    image: alan4habitatregistry.azurecr.io/alan/mysql:latest
+    image: alan6habitatregistry.azurecr.io/alan/mysql:latest
     count: 1
     service:
       name: mysql
@@ -39,8 +39,8 @@ metadata:
 customVersion: v1beta2
 spec:
   v1beta2:
-    image: alan4habitatregistry.azurecr.io/alan/wordpress:latest
-    count: 2
+    image: alan6habitatregistry.azurecr.io/alan/wordpress:latest
+    count: 1
     service:
       name: wordpress
       topology: standalone
