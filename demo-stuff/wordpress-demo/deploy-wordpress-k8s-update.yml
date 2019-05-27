@@ -39,7 +39,7 @@ metadata:
 customVersion: v1beta2
 spec:
   v1beta2:
-    image: alan6habitatregistry.azurecr.io/alan/wordpress:latest
+    image: alan6habitatregistry.azurecr.io/alan/wordpress:5.0.3
     count: 1
     service:
       name: wordpress
